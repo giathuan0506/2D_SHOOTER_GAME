@@ -61,8 +61,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Script\AttackTrigger.cs" />
+    <Compile Include="Assets\Script\BOX1.cs" />
+    <Compile Include="Assets\Script\Camerafollow.cs" />
+    <Compile Include="Assets\Script\FallingPlat.cs" />
     <Compile Include="Assets\Script\GroundCheck.cs" />
+    <Compile Include="Assets\Script\HeartUI.cs" />
+    <Compile Include="Assets\Script\MovingPlat.cs" />
+    <Compile Include="Assets\Script\PauseMenu.cs" />
     <Compile Include="Assets\Script\Player.cs" />
+    <Compile Include="Assets\Script\PlayerAttack.cs" />
+    <Compile Include="Assets\Script\Spikes.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>D:/Unity/Unity Project/2D Shooter/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
