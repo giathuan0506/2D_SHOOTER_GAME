@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour {
 
-
     public float speed = 50f, maxspeed = 3, maxjump = 4, jumpPow = 220f;
     public bool grounded = true, faceright = true, doublejump = false;
 
@@ -14,12 +13,14 @@ public class Player : MonoBehaviour {
 
     public Rigidbody2D r2;
     public Animator anim;
+    public gamemaster gm;
 
     // Use this for initialization
     void Start()
     {
         r2 = gameObject.GetComponent<Rigidbody2D>();
         anim = gameObject.GetComponent<Animator>();
+        gm = GameObject.FindGameObjectWithTag("gamemaster").GetComponent<gamemaster>();
         ourHealth = maxhealth;
     }
 
@@ -118,5 +119,14 @@ public class Player : MonoBehaviour {
     {
         r2.velocity = new Vector2(0, 0);
         r2.AddForce(new Vector2(Knockdir.x * -100, Knockdir.y * Knockpow));
+    }
+
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.CompareTag("Coins"))
+        {
+            Destroy(col.gameObject);
+            gm.points += 1;
+        }
     }
 }

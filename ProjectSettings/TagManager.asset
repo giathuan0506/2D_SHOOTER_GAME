@@ -8,6 +8,9 @@ TagManager:
   - Ground
   - Movingplat
   - spikes
+  - Enemy
+  - gamemaster
+  - Coins
   layers:
   - Default
   - TransparentFX
