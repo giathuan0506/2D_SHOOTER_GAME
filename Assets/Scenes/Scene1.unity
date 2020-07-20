@@ -536,6 +536,7 @@ GameObject:
   - component: {fileID: 175699559}
   - component: {fileID: 175699558}
   - component: {fileID: 175699557}
+  - component: {fileID: 175699560}
   m_Layer: 0
   m_Name: door
   m_TagString: Untagged
@@ -621,12 +622,25 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 175699556}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.48, y: -1.41, z: 0}
+  m_LocalPosition: {x: 38.45, y: -1.41, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &175699560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 175699556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a22345727674314e854e12dfab44a80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Levelload: 1
+  gm: {fileID: 0}
 --- !u!1 &186310370
 GameObject:
   m_ObjectHideFlags: 0
@@ -748,7 +762,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points: 0
+  highscore: 0
   pointtext: {fileID: 542383581}
+  Hightext: {fileID: 2100981035}
+  Inputtext: {fileID: 1663661928}
 --- !u!4 &290328706
 Transform:
   m_ObjectHideFlags: 0
@@ -1028,7 +1045,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 340652148}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15.42, y: -1.69, z: 0}
+  m_LocalPosition: {x: -7.7, y: -2.45, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 996870796}
@@ -1350,8 +1367,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 407503112}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.44270015, y: -1.7897443, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.36, y: -1.97, z: 0}
+  m_LocalScale: {x: 0.8875, y: 0.5501739, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 10

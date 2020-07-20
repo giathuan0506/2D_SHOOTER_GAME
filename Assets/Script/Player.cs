@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Player : MonoBehaviour {
+public class Player : MonoBehaviour
+{
 
     public float speed = 50f, maxspeed = 3, maxjump = 4, jumpPow = 220f;
     public bool grounded = true, faceright = true, doublejump = false;
@@ -107,6 +108,9 @@ public class Player : MonoBehaviour {
     public void Death()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
+        if (PlayerPrefs.GetInt("highscore") < gm.points)
+            PlayerPrefs.SetInt("highscore", gm.points);
     }
 
     public void Damage(int damage)
