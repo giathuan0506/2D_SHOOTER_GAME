@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TurretAI : MonoBehaviour {
+public class TurretAI : MonoBehaviour
+{
 
     public int curHealth = 100;
 
@@ -19,6 +20,7 @@ public class TurretAI : MonoBehaviour {
     public Transform target;
     public Animator anim;
     public Transform shootpointL, shootpointR;
+    public SoundManager sound;
 
 
     private void Awake()
@@ -29,7 +31,7 @@ public class TurretAI : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
-
+        sound = GameObject.FindGameObjectWithTag("sound").GetComponent<SoundManager>();
     }
 
     // Update is called once per frame
@@ -52,6 +54,7 @@ public class TurretAI : MonoBehaviour {
 
         if (curHealth < 0)
         {
+            sound.Playsound("destroy");
             Destroy(gameObject);
         }
     }

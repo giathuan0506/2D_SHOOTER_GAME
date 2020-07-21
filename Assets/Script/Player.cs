@@ -15,7 +15,7 @@ public class Player : MonoBehaviour
     public Rigidbody2D r2;
     public Animator anim;
     public gamemaster gm;
-
+    public SoundManager sound;
     // Use this for initialization
     void Start()
     {
@@ -23,6 +23,7 @@ public class Player : MonoBehaviour
         anim = gameObject.GetComponent<Animator>();
         gm = GameObject.FindGameObjectWithTag("gamemaster").GetComponent<gamemaster>();
         ourHealth = maxhealth;
+        sound = GameObject.FindGameObjectWithTag("sound").GetComponent<SoundManager>();
     }
 
     // Update is called once per frame
@@ -129,6 +130,7 @@ public class Player : MonoBehaviour
     {
         if (col.CompareTag("Coins"))
         {
+            sound.Playsound("coins");
             Destroy(col.gameObject);
             gm.points += 1;
         }

@@ -11,6 +11,7 @@ TagManager:
   - Enemy
   - gamemaster
   - Coins
+  - sound
   layers:
   - Default
   - TransparentFX

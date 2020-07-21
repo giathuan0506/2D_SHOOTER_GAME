@@ -2,10 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BOX1 : MonoBehaviour {
-
+public class BOX1 : MonoBehaviour
+{
     public int Health = 100;
+    public AudioSource audiosrc;
+    public AudioClip box;
 
+    private void Start()
+    {
+
+        audiosrc = gameObject.GetComponent<AudioSource>();
+    }
     // Update is called once per frame
     void Update()
     {
@@ -17,6 +24,7 @@ public class BOX1 : MonoBehaviour {
 
     void Damage(int damage)
     {
+        audiosrc.PlayOneShot(box, 0.8f);
         Health -= damage;
     }
 }

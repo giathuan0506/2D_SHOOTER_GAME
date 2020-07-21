@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Camerafollow : MonoBehaviour {
-
+public class Camerafollow : MonoBehaviour
+{
     public float smoothtimeX, smoothtimeY;
     public Vector2 velocity;
 
