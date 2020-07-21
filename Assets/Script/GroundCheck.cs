@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GroundCheck : MonoBehaviour
 {
+
     public Player player;
 
     // Use this for initialization
@@ -21,13 +22,13 @@ public class GroundCheck : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.isTrigger == false)
+        if (collision.isTrigger == false || collision.CompareTag("water"))
             player.grounded = true;
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.isTrigger == false)
+        if (collision.isTrigger == false || collision.CompareTag("water"))
             player.grounded = false;
     }
 }
