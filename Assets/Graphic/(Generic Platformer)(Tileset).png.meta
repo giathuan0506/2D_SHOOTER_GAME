@@ -3,6 +3,7 @@ guid: 16dd87cd232ecbb4ca7e19342b3c32a0
 TextureImporter:
   fileIDToRecycleName:
     21300000: (Generic Platformer)(Tileset)_0
+    21300002: (Generic Platformer)(Tileset)_1
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -126,13 +127,33 @@ TextureImporter:
         width: 48
         height: 29
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 2614c9e8513bb634a9c594b547008426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: (Generic Platformer)(Tileset)_1
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 103
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18ea7417e25c5964bbc96863ba59485e
       vertices: []
       indices: 
       edges: []
