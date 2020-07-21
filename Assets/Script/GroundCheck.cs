@@ -6,10 +6,14 @@ public class GroundCheck : MonoBehaviour
 {
 
     public Player player;
+    public MovingPlat mov;
+
+    public Vector3 movep;
 
     // Use this for initialization
     void Start()
     {
+        mov = GameObject.FindGameObjectWithTag("Movingplat").GetComponent<MovingPlat>();
         player = gameObject.GetComponentInParent<Player>();
     }
 
@@ -24,6 +28,13 @@ public class GroundCheck : MonoBehaviour
     {
         if (collision.isTrigger == false || collision.CompareTag("water"))
             player.grounded = true;
+        if (collision.isTrigger == false && collision.CompareTag("Movingplat"))
+        {
+            movep = player.transform.position;
+            movep.x += mov.speed * 1.3f;
+            player.transform.position = movep;
+        }
+
     }
 
     private void OnTriggerExit2D(Collider2D collision)

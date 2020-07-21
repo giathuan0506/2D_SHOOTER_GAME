@@ -16,14 +16,17 @@ public class Player : MonoBehaviour
     public Animator anim;
     public gamemaster gm;
     public SoundManager sound;
+
     // Use this for initialization
     void Start()
     {
+
         r2 = gameObject.GetComponent<Rigidbody2D>();
         anim = gameObject.GetComponent<Animator>();
         gm = GameObject.FindGameObjectWithTag("gamemaster").GetComponent<gamemaster>();
         ourHealth = maxhealth;
         sound = GameObject.FindGameObjectWithTag("sound").GetComponent<SoundManager>();
+
     }
 
     // Update is called once per frame
@@ -79,11 +82,14 @@ public class Player : MonoBehaviour
         if (h > 0 && !faceright)
         {
             Flip();
+
+
         }
 
         if (h < 0 && faceright)
         {
             Flip();
+
         }
 
         if (grounded)
@@ -128,11 +134,37 @@ public class Player : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
+
         if (col.CompareTag("Coins"))
         {
             sound.Playsound("coins");
             Destroy(col.gameObject);
             gm.points += 1;
         }
+
+        if (col.CompareTag("shoe"))
+        {
+
+            Destroy(col.gameObject);
+            maxspeed = 6f;
+            speed = 100f;
+            StartCoroutine(timecount(5));
+        }
+
+        if (col.CompareTag("heart"))
+        {
+
+            Destroy(col.gameObject);
+            ourHealth = 5;
+        }
     }
+
+    IEnumerator timecount(float time)
+    {
+        yield return new WaitForSeconds(time);
+        maxspeed = 3f;
+        speed = 50f;
+        yield return 0;
+    }
+
 }

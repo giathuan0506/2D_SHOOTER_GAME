@@ -73,8 +73,10 @@
     <Compile Include="Assets\Script\HeartUI.cs" />
     <Compile Include="Assets\Script\MovingPlat.cs" />
     <Compile Include="Assets\Script\PauseMenu.cs" />
+    <Compile Include="Assets\Script\platform.cs" />
     <Compile Include="Assets\Script\Player.cs" />
     <Compile Include="Assets\Script\PlayerAttack.cs" />
+    <Compile Include="Assets\Script\PlayerRaycast.cs" />
     <Compile Include="Assets\Script\scroller.cs" />
     <Compile Include="Assets\Script\SoundManager.cs" />
     <Compile Include="Assets\Script\Spikes.cs" />
