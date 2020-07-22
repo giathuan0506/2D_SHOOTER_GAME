@@ -4,6 +4,10 @@ TextureImporter:
   fileIDToRecycleName:
     21300000: (Generic Platformer)(Tileset)_0
     21300002: (Generic Platformer)(Tileset)_1
+    21300004: (Generic Platformer)(Tileset)_2
+    21300006: (Generic Platformer)(Tileset)_3
+    21300008: (Generic Platformer)(Tileset)_4
+    21300010: (Generic Platformer)(Tileset)_5
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -119,26 +123,6 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: (Generic Platformer)(Tileset)_0
-      rect:
-        serializedVersion: 2
-        x: 31
-        y: 11
-        width: 48
-        height: 29
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2614c9e8513bb634a9c594b547008426
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: (Generic Platformer)(Tileset)_1
       rect:
         serializedVersion: 2
@@ -147,13 +131,113 @@ TextureImporter:
         width: 31
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 18ea7417e25c5964bbc96863ba59485e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: (Generic Platformer)(Tileset)_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 80
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04bad3a44f16d2b40a7f72bb7ba38435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: (Generic Platformer)(Tileset)_0
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 95
+        width: 24
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57de87401d76acf40a15bc7c1659286f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: (Generic Platformer)(Tileset)_3
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 14
+        width: 65
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f2d83969015ae14ea3672eb40e47c5b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: (Generic Platformer)(Tileset)_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 113
+        width: 48
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74d1e0ffb146fe842bdbdc62c5e83f07
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: (Generic Platformer)(Tileset)_5
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 16
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee8acb212a0ef0a44834722a538219f2
       vertices: []
       indices: 
       edges: []
