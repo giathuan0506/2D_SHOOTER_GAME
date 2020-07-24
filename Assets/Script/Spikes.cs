@@ -5,7 +5,7 @@ using UnityEngine;
 public class Spikes : MonoBehaviour {
 
     public Player player;
-    public int damage = 2;
+    public int damage = 1;
 
 
     // Use this for initialization

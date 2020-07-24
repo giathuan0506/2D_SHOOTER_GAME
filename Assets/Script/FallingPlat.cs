@@ -5,7 +5,7 @@ using UnityEngine;
 public class FallingPlat : MonoBehaviour {
 
     public Rigidbody2D r2;
-    public float timedelay = 2;
+    public float timedelay = 1;
     // Use this for initialization
     void Start()
     {
